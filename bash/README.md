@@ -24,3 +24,7 @@ $ whoami
 oracle
 $ startup.sh [sid1 sid2 ... sidN]
 ```
+
+## cpu_usage.sh
+Get top-10 CPU consumers  
+Default watch time is 1 hour, to change rewrite SECS var inside script.
