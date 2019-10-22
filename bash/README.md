@@ -28,3 +28,7 @@ $ startup.sh [sid1 sid2 ... sidN]
 ## cpu_usage.sh
 Get top-10 CPU consumers  
 Default watch time is 1 hour, to change rewrite SECS var inside script.
+
+## pass_gen.sh
+CLI password generator.  
+Default length = 8 chars.
