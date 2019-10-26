@@ -24,3 +24,12 @@ Usage:
 $ python timer.py
 0 Minutes 1 Seconds # press Ctrl+C to exit
 ```
+
+## parser.py
+Python parser for ansible logs.
+Prints errors (`FAILED:`, `FATAL:`) and corresponding tasks.
+
+Usage:
+```
+$ parser.py file_to_parse
+```
