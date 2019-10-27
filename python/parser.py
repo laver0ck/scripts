@@ -8,7 +8,9 @@ import os
 '''
 
 usage = '''
-Usage: parser.py file1 [file2...file_n]
+Parse ansible logs files, find and print any errors.
+
+Usage: $ parser.py file1 [file2 ... file_n]
 No wildcards supported yet
 '''
 
@@ -30,15 +32,15 @@ for file_name in sys.argv[1:]:
         print('===============================')
         print('File: ' + file_name + ':\n')
         task_name = ''
-        task_printed = False
-        for i in file.readlines():
-            if i.startswith("TASK ["):
-                task_name = i
-                task_printed = False
-            elif i.startswith('fatal:') or i.startswith('failed:'):
-                if task_printed is False:
+        task_name_printed = False
+        for line in file.readlines():
+            if line.startswith("TASK ["):
+                task_name = line
+                task_name_printed = False
+            elif line.startswith('fatal:') or line.startswith('failed:'):
+                if task_name_printed is False:
                     print(task_name, end='')
-                    print(i)
-                    task_printed = True
+                    print(line)
+                    task_name_printed = True
                 else:
-                    print(i)
+                    print(line)
