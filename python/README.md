@@ -31,5 +31,5 @@ Prints errors (`FAILED:`, `FATAL:`) and corresponding tasks.
 
 Usage:
 ```
-$ parser.py file_to_parse
+$ parser.py file [file1 ... fileN]
 ```
