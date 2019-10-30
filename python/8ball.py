@@ -28,11 +28,11 @@ ball_top = [
                '*  **  *',
            '*              *',
         '*                    *',
-       '* * **************** * *',
+       '*                      *',
 ]
 
 ball_bottom = [
-       '* * **************** * *',
+       '*                      *',
         '*                    *',
            '*              *',
                '*  **  *'
@@ -50,6 +50,7 @@ if __name__ == '__main__':
     for i in ball_top:
         print('{: ^26}'.format(i))
     print('*{: ^24}*'.format('8ball says:'))
+    print('*{: ^24}*'.format(''))
     print('*{: ^24}*'.format(give_answer()))
     for i in ball_bottom:
         print('{: ^26}'.format(i))
