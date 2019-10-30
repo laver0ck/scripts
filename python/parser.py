@@ -3,15 +3,14 @@ import os
 
 ''' TODO:
     - get log from jenkins job with requests(auth)
-    - wildcards (glob.glob)
     - get logs from range of jenkins jobs (e.g. 20-50) and parse them
 '''
 
 usage = '''
 Parse ansible logs files, find and print any errors.
 
-Usage: $ parser.py file1 [file2 ... file_n]
-No wildcards supported yet
+    Usage: $ parser.py file1 [file2 ... file_n]
+    Wildcards can be used
 '''
 
 if len(sys.argv) == 1:
