@@ -32,3 +32,7 @@ Default watch time is 1 hour, to change rewrite SECS var inside script.
 ## pass_gen.sh
 CLI password generator.  
 Default length = 8 chars.
+
+## inet_check.sh
+Quick check if internet is OK.
+Pings google.com and returns result.
