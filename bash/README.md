@@ -34,5 +34,8 @@ CLI password generator.
 Default length = 8 chars.
 
 ## inet_check.sh
-Quick check if internet is OK.
+Quick check if internet is OK.  
 Pings google.com and returns result.
+
+## backup_file.sh
+Backup file to /var/{filename}  
