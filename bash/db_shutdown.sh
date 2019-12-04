@@ -1,4 +1,5 @@
 #!/bin/bash
+# shuts down oracle database on timeout
 
 findProfile() {
 if [ ! $# -eq 0 ]

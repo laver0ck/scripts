@@ -1,4 +1,5 @@
 #!/bin/bash
+# starts oracle DB with timeout
 
 findProfile() {
 if [ ! $# -eq 0 ]
