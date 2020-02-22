@@ -33,3 +33,11 @@ Usage:
 ```
 $ parser.py file [file1 ... fileN]
 ```
+
+## weather.py
+Get current weather for Moscow.
+
+Usage:
+```
+$ weather.py [day]
+```
