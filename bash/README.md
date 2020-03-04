@@ -39,3 +39,14 @@ Pings google.com and returns result.
 
 ## backup_file.sh
 Backup file to /var/{filename}  
+
+## restart_gunicorn.sh
+Restarts (kill&run) running gunicorn server.  
+If no server is running, starts it.
+
+Default APP_MODULE is `main:app`
+
+Usage:
+```shell
+$ restart_gunicorn.sh [APP_MODULE]
+```
