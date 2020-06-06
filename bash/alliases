@@ -1,0 +1,30 @@
+alias gl='git log --pretty=format:"%h %Cgreen%<(20,trunc)%an%Creset %Cblue%ar%Creset : %<(50,trunc)%s"'
+
+alias gg='git log --oneline -20'
+
+alias gs='git status --short'
+alias gsl='git status'
+
+alias get='br="origin $(git rev-parse --abbrev-ref HEAD)";echo $br'
+
+alias gb='git branch'
+alias gc='git checkout'
+
+alias ga='git add'
+alias gaa='git add .'
+
+alias cam='git commit -a -m'
+
+alias gr='git rebase -i'
+alias gr2='git rebase -i HEAD~2'
+
+alias gp='git push'
+alias gpf='git push -f'
+
+alias c='clear'
+
+alias la='ls -la'
+
+alias ag='eval $(ssh-agent); ssh-add'
+
+alias runflask='FLASK_APP=main.py flask run'
