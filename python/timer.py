@@ -18,4 +18,6 @@ while True:
 			minutes += 1
 			seconds = 0
 	except KeyboardInterrupt as e:
+		print("\n")
 		break
+
