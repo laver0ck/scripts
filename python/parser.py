@@ -16,10 +16,10 @@ Parse ansible logs files, find and print any errors.
 if len(sys.argv) == 1:
     print('\nWrong arguments!')
     print(usage)
-    exit(1)
+    sys.exit(1)
 elif sys.argv[1] and sys.argv[1] in ['-h', '--help']:
     print(usage)
-    exit(0)
+    sys.exit(0)
 
 
 for file_name in sys.argv[1:]:
