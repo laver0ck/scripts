@@ -19,7 +19,7 @@ if len(sys.argv) == 1:
     exit(1)
 elif sys.argv[1] and sys.argv[1] in ['-h', '--help']:
     print(usage)
-    exit(1)
+    exit(0)
 
 
 for file_name in sys.argv[1:]:
