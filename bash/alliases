@@ -27,4 +27,4 @@ alias la='ls -la'
 
 alias ag='eval $(ssh-agent); ssh-add'
 
-alias runflask='FLASK_APP=main.py flask run'
+alias bigfiles='du -xchat10m | sort -h'
